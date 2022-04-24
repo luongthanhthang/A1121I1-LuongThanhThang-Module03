@@ -6,7 +6,7 @@ use my_database;
 -- xoá database
 drop database my_database;
 -- -- tạo bảng student
-create table student(
+ create table student(
 `id` int primary key auto_increment,
 `name` varchar(50),
  `age` int,

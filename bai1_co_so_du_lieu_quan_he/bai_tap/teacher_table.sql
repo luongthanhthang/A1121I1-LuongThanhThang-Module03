@@ -1,12 +1,15 @@
 -- khởi tạo database
 create database if not exists my_database_2;
 -- sử dụng database
-use my_database;
+use my_database_2;
+
+-- xoá bảng
+drop table teacher;
 
 -- xoá database
-drop database my_database;
+drop database my_database_2;
 -- -- tạo bảng student
-create table teacher(
+create table `my_database_2`.`teacher`(
 `id` int primary key auto_increment,
 `name` varchar(50),
  `age` int,
