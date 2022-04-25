@@ -24,12 +24,12 @@ create table if not exists product(
 `p_price` double
 );
 
--- quan hệ n-n  
+-- quan hệ 1-n  
 create table if not exists order_detail(
 `o_id` int,
 `p_id` int,
 `od_qty` int,
 primary key(o_id, p_id),
 foreign key(`o_id`) references `order`(`o_id`),
-foreign key(`p_id`) references product(`p_id`)
+foreign key(`p_id`) references `product`(`p_id`)
 );

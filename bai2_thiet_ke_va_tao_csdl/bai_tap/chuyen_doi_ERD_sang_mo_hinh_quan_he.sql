@@ -1,80 +1,80 @@
-create database xay_dung;
+create database if not exists xay_dung;
 use xay_dung;
 
 -- drop database xay_dung;
 
--- phiếu xuất
-create table phieu_xuat(
-so_px int primary key auto_increment,
-ngay_xuat date
-);
-
--- phiếu nhập
-create table phieu_nhap(
-so_pn int primary key auto_increment,
-ngay_nhap date
-);
-
--- vật tư
-create table vat_tu(
-ma_vtu int primary key,
-ten_vtu varchar(30)
-);
-
 --  thuộc tính đa trị sdt(của nhà cung cấp)
-create table sdt(
+create table if not exists so_dien_thoai(
 id_sdt int primary key auto_increment,
-sdt varchar(10)
+sdt varchar(10) not null
 );
 
 -- nhà cung cấp
-create table nha_cc(
+create table if not exists nha_cung_cap(
 ma_ncc int primary key,
 ten_ncc varchar(30),
 dia_chi varchar(30),
 id_sdt int,
-foreign key(id_sdt) references sdt(id_sdt)
+foreign key(id_sdt) references so_dien_thoai(id_sdt)
 );
 
 -- Đơn đặt hàng
-create table don_dh(
-so_dh int primary key auto_increment,
+create table if not exists don_dat_hang(
+so_dh int primary key,
 ngay_dh date,
 -- mã nhà cung cấp
 ma_ncc int,
-foreign key(ma_ncc) references nha_cc(ma_ncc)
+foreign key(ma_ncc) references nha_cung_cap(ma_ncc)
+);
+
+
+-- phiếu xuất
+create table if not exists phieu_xuat(
+so_phieu_xuat int primary key auto_increment,
+ngay_xuat date
+);
+
+-- phiếu nhập
+create table if not exists phieu_nhap(
+so_phieu_nhap int primary key auto_increment,
+ngay_nhap date
+);
+
+-- vật tư
+create table if not exists vat_tu(
+ma_vat_tu int primary key,
+ten_vat_tu varchar(30) not null
 );
 
 -- quan hệ n-n phiếu xuất và vật tư
-create table chi_tiet_phieu_xuat(
-dg_xuat double,
-sl_xuat int,
-so_px int,
-ma_vtu int,
-primary key(so_px,ma_vtu),
--- foreign key(so_px) references phieu_xuat(so_px) ,
-foreign key(ma_vtu)  references vat_tu(ma_vtu),
-foreign key(so_px) references phieu_xuat(so_px)
+create table if not exists chi_tiet_phieu_xuat(
+don_gia_xuat double,
+so_luong_xuat int,
+so_phieu_xuat int,
+ma_vat_tu int,
+primary key(so_phieu_xuat,ma_vat_tu),
+foreign key(ma_vat_tu) references vat_tu(ma_vat_tu),
+foreign key(so_phieu_xuat) references phieu_xuat(so_phieu_xuat)
 );
 
 -- quan hệ n-n vật tư và phiếu nhập
-create table chi_tiet_phieu_nhap(
-dg_nhap double,
-sl_nhap int,
-ma_vtu int ,
-so_pn int ,
-primary key(ma_vtu, so_pn),
-foreign key(ma_vtu) references vat_tu(ma_vtu),
-foreign key(so_pn) references phieu_nhap(so_pn)
+create table if not exists chi_tiet_phieu_nhap(
+don_gia_nhap double,
+so_luong_nhap int,
+ma_vat_tu int ,
+so_phieu_nhap int ,
+primary key(ma_vat_tu, so_phieu_nhap),
+foreign key(ma_vat_tu) references vat_tu(ma_vat_tu),
+foreign key(so_phieu_nhap) references phieu_nhap(so_phieu_nhap)
 );
 
 -- quan hệ n-n vật tư và đơn đặt hàng 
-create table chi_tiet_don_dat_hang(
-ma_vtu int,
+create table if not exists chi_tiet_don_dat_hang(
+ma_vat_tu int,
 so_dh int,
-primary key(ma_vtu, so_dh),
-foreign key(ma_vtu) references vat_tu(ma_vtu),
-foreign key(so_dh) references don_dh(so_dh)
+primary key(ma_vat_tu, so_dh),
+foreign key(ma_vat_tu) references vat_tu(ma_vat_tu),
+foreign key(so_dh) references don_dat_hang(so_dh)
 );
 
 
