@@ -12,5 +12,13 @@ select * from `subject` where `subject`.credit between 3 and 5;
 update student set class_id = 2 where student_name = "hung";
 
 select * from student;
+select * from `subject`;
+select * from mark;
 
 -- Hiển thị các thông tin: StudentName, SubName, Mark. Dữ liệu sắp xếp theo điểm thi (mark) giảm dần. nếu trùng sắp theo tên tăng dần.
+select student.student_name, `subject`.sub_name, `mark`.mark 
+from student
+join `mark` on  mark.student_id = student.student_id
+join `subject` on  mark.sub_id = `subject`.sub_id
+;
+
