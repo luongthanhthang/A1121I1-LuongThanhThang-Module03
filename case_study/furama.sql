@@ -8,6 +8,7 @@ ma_vi_tri int primary key auto_increment,
 ten_vi_tri varchar(45)
 );
 insert into vi_tri(ten_vi_tri) values("Quản lí"), ("Nhân viên");
+
 select * from vi_tri;
 
 create table if not exists trinh_do(
@@ -26,11 +27,11 @@ select * from bo_phan;
 
 create table if not exists nhan_vien(
 ma_nhan_vien int primary key auto_increment,
-ho_ten varchar(45),
-ngay_sinh date,
-so_cmnd varchar(45),
-luong double,
-so_dien_thoai varchar(45),
+ho_ten varchar(45) not null,
+ngay_sinh date not null,
+so_cmnd varchar(45) not null,
+luong double not null,
+so_dien_thoai varchar(45) not null,
 email varchar(45),
 dia_chi varchar(45),
 ma_vi_tri int,
@@ -63,11 +64,11 @@ select *from loai_khach;
 create table if not exists khach_hang(
 ma_khach_hang int primary key auto_increment,
 ma_loai_khach int,
-ho_ten varchar(45),
-ngay_sinh date,
-gioi_tinh bit(1),
-so_cmnnd varchar(45),
-so_dien_thoai varchar(45),
+ho_ten varchar(45) not null,
+ngay_sinh date not null,
+gioi_tinh bit(1) not null,
+so_cmnnd varchar(45) not null,
+so_dien_thoai varchar(45) not null,
 email varchar(45),
 dia_chi varchar(45),
 foreign key (ma_loai_khach) references loai_khach(ma_loai_khach)
@@ -101,9 +102,9 @@ select *from loai_dich_vu;
 
 create table if not exists dich_vu(
 ma_dich_vu int primary key auto_increment,
-ten_dich_vu varchar(45),
+ten_dich_vu varchar(45) not null,
 dien_tich int,
-chi_phi_thue double,
+chi_phi_thue double not null,
 so_nguoi_toi_da int,
 ma_kieu_thue int,
 ma_loai_dich_vu int,
@@ -125,9 +126,9 @@ select * from dich_vu;
 
 create table if not exists hop_dong(
 ma_hop_dong int primary key auto_increment,
-ngay_lam_hop_dong datetime,
-ngay_ket_thuc datetime,
-tien_dat_coc double,
+ngay_lam_hop_dong datetime not null,
+ngay_ket_thuc datetime not null,
+tien_dat_coc double not null,
 ma_nhan_vien int,
 ma_khach_hang int,
 ma_dich_vu int,
@@ -135,6 +136,21 @@ foreign key (ma_nhan_vien) references nhan_vien(ma_nhan_vien),
 foreign key (ma_khach_hang) references khach_hang(ma_khach_hang),
 foreign key (ma_dich_vu) references dich_vu(ma_dich_vu)
 );
+
+-- cách 2: câu 18
+-- create table if not exists hop_dong(
+-- ma_hop_dong int primary key auto_increment,
+-- ngay_lam_hop_dong datetime,
+-- ngay_ket_thuc datetime,
+-- tien_dat_coc double,
+-- ma_nhan_vien int,
+-- ma_khach_hang int,
+-- ma_dich_vu int,
+-- foreign key (ma_nhan_vien) references nhan_vien(ma_nhan_vien),
+-- constraint fk_hop_dong_khach_hang foreign key (ma_khach_hang) references khach_hang(ma_khach_hang),
+-- foreign key (ma_dich_vu) references dich_vu(ma_dich_vu)
+-- );
+
 insert into hop_dong(ngay_lam_hop_dong,ngay_ket_thuc,tien_dat_coc,ma_nhan_vien,ma_khach_hang,ma_dich_vu) values
 ("2020-12-08","2020-12-08",0,3,1,3),
 ("2020-07-14","2020-07-21",200000,7,3,1),
@@ -152,9 +168,9 @@ select * from hop_dong;
 
 create table if not exists dich_vu_di_kem(
 ma_dich_vu_di_kem int primary key auto_increment,
-ten_dich_vu_di_kem varchar(45),
-gia double,
-don_vi varchar(10),
+ten_dich_vu_di_kem varchar(45) not null,
+gia double not null,
+don_vi varchar(10) not null,
 trang_thai varchar(45)
 );
 insert into dich_vu_di_kem(ten_dich_vu_di_kem,gia,don_vi,trang_thai) values
@@ -170,7 +186,7 @@ create table if not exists hop_dong_chi_tiet(
 ma_hop_dong_chi_tiet int primary key auto_increment,
 ma_hop_dong int,
 ma_dich_vu_di_kem int,
-so_luong int,
+so_luong int not null,
 foreign key (ma_hop_dong) references hop_dong(ma_hop_dong),
 foreign key (ma_dich_vu_di_kem) references dich_vu_di_kem(ma_dich_vu_di_kem)
 );
@@ -225,7 +241,7 @@ left join hop_dong on khach_hang.ma_khach_hang = hop_dong.ma_khach_hang
 left join dich_vu on dich_vu.ma_dich_vu = hop_dong.ma_dich_vu
 left join hop_dong_chi_tiet on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
 left join dich_vu_di_kem on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
-group by hop_dong.ma_hop_dong
+group by hop_dong.ma_hop_dong, khach_hang.ma_khach_hang
 order by khach_hang.ma_khach_hang
 ;
 
@@ -346,10 +362,10 @@ group by hop_dong.ma_hop_dong
 
 -- 13.	Hiển thị thông tin các Dịch vụ đi kèm được sử dụng nhiều nhất bởi các Khách hàng đã đặt phòng. 
 -- (Lưu ý là có thể có nhiều dịch vụ có số lần sử dụng nhiều như nhau).
-select dich_vu_di_kem.ma_dich_vu_di_kem,  dich_vu_di_kem.ten_dich_vu_di_kem,  sum(hop_dong_chi_tiet.so_luong) as so_luong_dich_vu_di_kem
+select dich_vu_di_kem.ma_dich_vu_di_kem, dich_vu_di_kem.ten_dich_vu_di_kem,  sum(hop_dong_chi_tiet.so_luong) as so_luong_dich_vu_di_kem
 from dich_vu_di_kem
 join hop_dong_chi_tiet on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
-group by dich_vu_di_kem.ma_dich_vu_di_kem
+group by hop_dong_chi_tiet.ma_dich_vu_di_kem
 having sum(hop_dong_chi_tiet.so_luong) >= all(
 select sum(hop_dong_chi_tiet.so_luong) from hop_dong_chi_tiet
 group by hop_dong_chi_tiet.ma_dich_vu_di_kem
@@ -391,22 +407,209 @@ order by nhan_vien.ma_nhan_vien
 select nhan_vien.ma_nhan_vien, nhan_vien.ho_ten
 from nhan_vien
 where nhan_vien.ma_nhan_vien not in (
-select nhan_vien.ma_nhan_vien
-from nhan_vien
-join hop_dong on nhan_vien.ma_nhan_vien = hop_dong.ma_nhan_vien
+select hop_dong.ma_nhan_vien
+from hop_dong
 where (hop_dong.ngay_lam_hop_dong between "2019-01-01" and "2021-12-31") 
 )
 ;
 
 -- xoá các Nhân viên chưa từng lập hợp đồng
 delete from nhan_vien 
-where nhan_vien.ma_nhan_vien in (
-select nhan_vien.ma_nhan_vien, nhan_vien.ho_ten
-from nhan_vien
 where nhan_vien.ma_nhan_vien not in (
-select nhan_vien.ma_nhan_vien
-from nhan_vien
-join hop_dong on nhan_vien.ma_nhan_vien = hop_dong.ma_nhan_vien
-where (hop_dong.ngay_lam_hop_dong between "2019-01-01" and "2021-12-31") 
-)
+select hop_dong.ma_nhan_vien
+from hop_dong
+where hop_dong.ngay_lam_hop_dong between "2019-01-01" and "2021-12-31"
 );
+
+select * from nhan_vien;
+
+-- 17.	Cập nhật thông tin những khách hàng có ten_loai_khach từ Platinum lên Diamond
+-- , chỉ cập nhật những khách hàng đã từng đặt phòng với Tổng Tiền thanh toán trong năm 2021 là lớn hơn 10.000.000 VNĐ.
+select *
+  , sum(dich_vu.chi_phi_thue + ifnull(dich_vu_di_kem.gia*hop_dong_chi_tiet.so_luong, 0)) as tong_tien 
+from khach_hang 
+join loai_khach on khach_hang.ma_loai_khach = loai_khach.ma_loai_khach
+join hop_dong on hop_dong.ma_khach_hang = khach_hang.ma_khach_hang
+join dich_vu on dich_vu.ma_dich_vu = hop_dong.ma_dich_vu
+left join hop_dong_chi_tiet on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
+left join dich_vu_di_kem on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
+where (khach_hang.ma_loai_khach between 1 and 2) and year(hop_dong.ngay_lam_hop_dong) = "2021"
+group by hop_dong.ma_khach_hang 
+having sum(dich_vu.chi_phi_thue + ifnull(dich_vu_di_kem.gia*hop_dong_chi_tiet.so_luong, 0)) > 10000000
+;
+
+update khach_hang set khach_hang.ma_loai_khach = 1
+where khach_hang.ma_khach_hang in (
+select * from (
+select khach_hang.ma_khach_hang
+from khach_hang 
+join loai_khach on khach_hang.ma_loai_khach = loai_khach.ma_loai_khach
+join hop_dong on hop_dong.ma_khach_hang = khach_hang.ma_khach_hang
+join dich_vu on dich_vu.ma_dich_vu = hop_dong.ma_dich_vu
+left join hop_dong_chi_tiet on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
+left join dich_vu_di_kem on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
+where khach_hang.ma_loai_khach = 2 and year(hop_dong.ngay_lam_hop_dong) = "2021"
+group by khach_hang.ma_khach_hang 
+having sum(dich_vu.chi_phi_thue + ifnull(dich_vu_di_kem.gia*hop_dong_chi_tiet.so_luong, 0)) > 10000000
+) as table_update
+); 
+
+-- cách 2 tạo view
+drop view if exists update_table;
+create view update_table as
+(select khach_hang.ma_khach_hang
+from khach_hang 
+join loai_khach on khach_hang.ma_loai_khach = loai_khach.ma_loai_khach
+join hop_dong on hop_dong.ma_khach_hang = khach_hang.ma_khach_hang
+join dich_vu on dich_vu.ma_dich_vu = hop_dong.ma_dich_vu
+left join hop_dong_chi_tiet on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
+left join dich_vu_di_kem on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
+where khach_hang.ma_loai_khach = 2 or khach_hang.ma_loai_khach = 1 and year(hop_dong.ngay_lam_hop_dong) = "2021"
+group by khach_hang.ma_khach_hang 
+having sum(dich_vu.chi_phi_thue + ifnull(dich_vu_di_kem.gia * hop_dong_chi_tiet.so_luong, 0)) > 10000000
+);
+
+-- 18.	Xóa những khách hàng có hợp đồng trước năm 2021 (chú ý ràng buộc giữa các bảng).
+-- tắt check khoá ngoại để có thể update, delete
+SET FOREIGN_KEY_CHECKS=0;
+delete from khach_hang where khach_hang.ma_khach_hang
+in (
+select hop_dong.ma_khach_hang from hop_dong
+where year(hop_dong.ngay_lam_hop_dong) < 2021
+);
+-- bật lại check khoá ngoại
+SET FOREIGN_KEY_CHECKS=1;
+select * from khach_hang;
+
+-- cách 2: thêmm bớt và xoá key
+-- alter table hop_dong drop foreign key fk_hop_dong_khach_hang;
+-- Thêm khoá ngoại này KHÔNG được do ở bảng hợp đồng có các khách hàng có mã là 1 , 3 , 4 nhưng ở bảng khách hàng không còn các khách hàng có mã này nữa.
+-- alter table hop_dong add constraint fk_hop_dong_khach_hang foreign key (ma_khach_hang) references khach_hang(ma_khach_hang);
+-- alter table hop_dong_chi_tiet drop foreign key fk_hdct_hop_dong;
+-- alter table hop_dong_chi_tiet add constraint fk_hdct_hop_dong  foreign key (ma_hop_dong) references hop_dong(ma_hop_dong);
+-- delete from khach_hang
+-- where khach_hang.ma_khach_hang in (select hop_dong.ma_khach_hang from hop_dong where year(hop_dong.ngay_lam_hop_dong) < 2021);
+
+-- cách 3: thay vì xoá thì update để không flag = 0 là đã xoá, flag = 1 thì chưa xoá
+alter table khach_hang add flag bit default 1;
+-- xoá cột
+alter table khach_hang drop column flag;
+
+update khach_hang set flag = 0 where khach_hang.ma_khach_hang
+in (
+select hop_dong.ma_khach_hang from hop_dong
+where year(hop_dong.ngay_lam_hop_dong) < 2021
+);
+
+select * from khach_hang;
+
+-- 19.	Cập nhật giá cho các dịch vụ đi kèm được sử dụng trên 10 lần trong năm 2020 lên gấp đôi.
+-- tắt update SET SQL_SAFE_UPDATES=0; 
+
+drop view if exists gia_update_table;
+create view gia_update_table as
+select dich_vu_di_kem.ma_dich_vu_di_kem, dich_vu_di_kem.ten_dich_vu_di_kem, sum(hop_dong_chi_tiet.so_luong) as so_luong, dich_vu_di_kem.gia
+from dich_vu_di_kem
+join hop_dong_chi_tiet on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
+join hop_dong on hop_dong.ma_hop_dong = hop_dong_chi_tiet.ma_hop_dong 
+where year(hop_dong.ngay_lam_hop_dong) = "2020"
+group by dich_vu_di_kem.ma_dich_vu_di_kem
+having sum(hop_dong_chi_tiet.so_luong) > 10;
+
+select * from gia_update_table;
+
+-- Dịch vụ sau đây sẽ tăng giá lên gấp đôi:
+update dich_vu_di_kem set dich_vu_di_kem.gia = dich_vu_di_kem.gia * 2
+where dich_vu_di_kem.ma_dich_vu_di_kem
+ in (select dich_vu_di_kem.ma_dich_vu_di_kem from gia_update_table);
+
+-- 20.	Hiển thị thông tin của tất cả các nhân viên và khách hàng có trong hệ thống, 
+-- thông tin hiển thị bao gồm id (ma_nhan_vien, ma_khach_hang), ho_ten, email, so_dien_thoai, ngay_sinh, dia_chi.
+select nhan_vien.ma_nhan_vien as "ma", nhan_vien.ho_ten as "ho_ten", 
+nhan_vien.email as "email", nhan_vien.so_dien_thoai as "sdt", 
+nhan_vien.ngay_sinh as "ngay_sinh", nhan_vien.dia_chi as "dia_chi", "nhan_vien" as "phan_loai"
+from nhan_vien
+group by nhan_vien.ma_nhan_vien
+union all
+select khach_hang.ma_khach_hang, khach_hang.ho_ten, khach_hang.email, 
+khach_hang.so_dien_thoai, khach_hang.ngay_sinh, khach_hang.dia_chi, "khach_hang"
+from khach_hang
+group by khach_hang.ma_khach_hang
+;
+
+-- 21.	Tạo khung nhìn có tên là v_nhan_vien để lấy được thông tin của tất cả các nhân viên có địa chỉ là “Hải Châu” 
+-- và đã từng lập hợp đồng cho một hoặc nhiều khách hàng bất kì với ngày lập hợp đồng là “12/12/2019”.
+drop view if exists v_nhan_vien;
+create view v_nhan_vien as (
+select nhan_vien.*, hop_dong.ngay_lam_hop_dong from nhan_vien 
+join hop_dong on nhan_vien.ma_nhan_vien = hop_dong.ma_nhan_vien
+where nhan_vien.dia_chi like "%Đà Nẵng%"
+-- and hop_dong.ngay_lam_hop_dong = "2021-04-25"
+group by hop_dong.ma_nhan_vien
+having count(hop_dong.ma_nhan_vien) > 0
+);
+
+select * from v_nhan_vien;
+
+-- 22.	Thông qua khung nhìn v_nhan_vien thực hiện cập nhật địa chỉ thành “Liên Chiểu” 
+-- đối với tất cả các nhân viên được nhìn thấy bởi khung nhìn này.
+update nhan_vien set nhan_vien.dia_chi = "Liên Chiểu"
+where nhan_vien.ma_nhan_vien in 
+( select v_nhan_vien.ma_nhan_vien from v_nhan_vien
+);
+
+-- 23.	Tạo Stored Procedure sp_xoa_khach_hang dùng để xóa thông tin 
+-- của một khách hàng nào đó với ma_khach_hang được truyền vào như là 1 tham số của sp_xoa_khach_hang.
+delimiter //
+create procedure sp_xoa_khach_hang (in ma_khach_hang_xoa int)
+begin 
+	update khach_hang set khach_hang.flag = 0
+    where khach_hang.ma_khach_hang = ma_khach_hang_xoa;
+end 
+// delimiter ;
+
+call sp_xoa_khach_hang(2);
+
+-- 24.	Tạo Stored Procedure sp_them_moi_hop_dong dùng để thêm mới vào bảng 
+-- hop_dong với yêu cầu sp_them_moi_hop_dong phải thực hiện kiểm tra tính hợp lệ của dữ liệu bổ sung
+-- , với nguyên tắc không được trùng khóa chính và đảm bảo toàn vẹn tham chiếu đến các bảng liên quan.
+
+drop procedure if exists sp_them_moi_hop_dong;
+delimiter //
+create procedure sp_them_moi_hop_dong (ma_hop_dong_add int, ngay_lam_hop_dong_add datetime, ngay_ket_thuc_add datetime, tien_dat_coc_add double, ma_nhan_vien_add int, ma_khach_hang_add int, ma_dich_vu_add int)
+begin
+	if ma_hop_dong_add in (select hop_dong.ma_hop_dong from hop_dong)
+	then 
+		select "ma_hop_dong_add nhap vao khong hop le" as `error`;
+	else
+		insert into hop_dong
+		values (ma_hop_dong_add, ngay_lam_hop_dong_add , ngay_ket_thuc_add , tien_dat_coc_add , ma_nhan_vien_add , ma_khach_hang_add , ma_dich_vu_add);
+    end if;
+end
+// delimiter ;
+
+call sp_them_moi_hop_dong (15,"2022-02-08","2022-03-08",2,3,4,5);
+call sp_them_moi_hop_dong (1,"2022-02-08","2022-03-08",2,3,4,5);
+
+-- 25.	Tạo Trigger có tên tr_xoa_hop_dong khi xóa bản ghi trong bảng hop_dong thì hiển thị tổng số lượng bản ghi 
+-- còn lại có trong bảng hop_dong ra giao diện console của database.
+-- Lưu ý: Đối với MySQL thì sử dụng SIGNAL hoặc ghi log thay cho việc ghi ở console.
+drop trigger if exists tr_xoa_hop_dong;
+
+delimiter //
+create trigger tr_xoa_hop_dong
+-- Hành động để kích hoạt trigger
+after delete 
+on hop_dong for each row
+begin
+declare tong_so_luong_ban_ghi_con_lai int;
+set tong_so_luong_ban_ghi_con_lai =  (select count(hop_dong.ma_hop_dong) from hop_dong);
+insert into tong_so_luong_ban_ghi_con_lai 
+end;
+// delimiter ;
+
+-- check
+SET FOREIGN_KEY_CHECKS=0;
+delete from hop_dong where (hop_dong.ma_hop_dong = 11);
+
+
