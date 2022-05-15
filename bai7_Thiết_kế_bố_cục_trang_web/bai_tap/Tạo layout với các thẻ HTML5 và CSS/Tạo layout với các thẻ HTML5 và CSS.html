@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo layout với các thẻ HTML5 và CSS</title>
+    <style>
+        .col-md-1 {
+            width: 8.33333%;
+        }
+
+        .col-md-2 {
+            width: 16.66667%;
+        }
+
+        .col-md-3 {
+            width: 25%;
+        }
+
+        .col-md-4 {
+            width: 33.33333%;
+        }
+
+        .col-md-5 {
+            width: 41.66667%;
+        }
+
+        .col-md-6 {
+            width: 50%;
+        }
+
+        .col-md-7 {
+            width: 58.33333%;
+        }
+
+        .col-md-8 {
+            width: 66.66667%;
+        }
+
+        .col-md-9 {
+            width: 75%;
+        }
+
+        .col-md-10 {
+            width: 83.33333%;
+        }
+
+        .col-md-11 {
+            width: 91.66667%;
+        }
+
+        .col-md-12 {
+            width: 100%;
+        }
+
+        header {
+            background: red;
+        }
+
+        nav {
+            background: blue;
+        }
+
+        section {
+            background: yellow;
+        }
+
+        aside {
+            background: pink;
+        }
+
+        article {
+            background: green;
+        }
+
+        footer {
+            background: violet;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+<header class="col-md-12" style="height: 50px">header</header>
+<nav class="col-md-12" style="height: 50px">nav</nav>
+
+<div style="float: left" class="col-md-8" >
+    <section style="height: 250px">section</section>
+    <article style="height: 250px">article</article>
+</div>
+
+<div style="float: left" class="col-md-4">
+<aside style="height: 500px">aside</aside>
+</div>
+<footer class="col-md-12" style="height: 100px">footer</footer>
+</body>
+</html>

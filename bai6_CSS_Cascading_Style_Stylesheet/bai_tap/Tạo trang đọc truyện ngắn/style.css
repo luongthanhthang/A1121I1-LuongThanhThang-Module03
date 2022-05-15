@@ -154,3 +154,32 @@ a{
     text-decoration: none;
     /*tắt gạch ngang*/
 }
+
+/*lúc đầu*/
+/*a:link {*/
+/*    color: green;*/
+/*    background-color: transparent;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*đã click*/
+/*a:visited {*/
+/*    color: pink;*/
+/*    background-color: transparent;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*bỏ chuột vào*/
+/*a:hover {*/
+/*    color: red;*/
+/*    background-color: transparent;*/
+/*    text-decoration: underline;*/
+/*}*/
+
+/*lúc click*/
+/*a:active {*/
+/*    color: yellow;*/
+/*    background-color: transparent;*/
+/*    text-decoration: underline;*/
+/*}*/
+

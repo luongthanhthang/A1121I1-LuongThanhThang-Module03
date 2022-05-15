@@ -1,0 +1,142 @@
+/*grid view*/
+.col-md-1 {
+    width: 8.33333%;
+}
+
+.col-md-2 {
+    width: 16.66667%;
+}
+
+.col-md-3 {
+    width: 25%;
+}
+
+.col-md-4 {
+    width: 33.33333%;
+}
+
+.col-md-5 {
+    width: 41.66667%;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.col-md-7 {
+    width: 58.33333%;
+}
+
+.col-md-8 {
+    width: 66.66667%;
+}
+
+.col-md-9 {
+    width: 75%;
+}
+
+.col-md-10 {
+    width: 83.33333%;
+}
+
+.col-md-11 {
+    width: 91.66667%;
+}
+
+.col-md-12 {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    background: white;
+}
+
+
+#header{
+    height: 20px;
+    border-radius: 15px;
+    vertical-align: center;
+}
+
+td{
+    text-align: center;
+}
+
+#content {
+    position: relative;
+    top: 100px;
+    z-index: 1;
+    height: 1100px;
+    background: whitesmoke;
+}
+
+#facebook-font {
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0px 0px 0px 10px;
+}
+
+.header-right {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0px 0px 10px;
+    color: gray;
+}
+
+.content-right {
+    font-size: 16px;
+    margin: 10px 0px 0px 10px;
+
+}
+
+/*icon camera*/
+.gg-camera {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    border: 2px solid;
+    border-radius: 3px;
+    width: 18px;
+    height: 12px;
+    perspective: 24px
+}
+.gg-camera::after,
+.gg-camera::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+.gg-camera::before {
+    border: 2px solid;
+    border-left-color: transparent;
+    transform: rotateY(-70deg);
+    width: 8px;
+    height: 8px;
+    right: -7px;
+    top: 0
+}
+.gg-camera::after {
+    width: 10px;
+    height: 5px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    top: -5px;
+    right: 2px;
+    border-top-right-radius: 2px
+}
+
+#left td {
+    text-align: left;
+}
+.icon-header td img:hover{
+    background-color: aquamarine;
+}

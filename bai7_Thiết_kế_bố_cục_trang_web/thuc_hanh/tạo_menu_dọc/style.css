@@ -1,0 +1,38 @@
+body{
+    font-family: Arial;
+}
+#menu, #menu ul, #menu li{
+    padding:0;
+    margin:0;
+}
+
+#menu li{
+    list-style-type: square;
+    position: relative;
+    width:100px;
+    height: 30px;
+    padding:0 20px;
+    /*background-color: black;*/
+    line-height: 30px;
+    /*cursor: pointer; chuyển biểu tượng của con trỏ màn hình sang hình bàn tay.*/
+    cursor:pointer;
+    margin-left: 100px;
+}
+
+#menu li:hover{
+    background-color:red;
+}
+
+#menu ul ul{
+    position: absolute;
+    top:0;
+    left:140px;
+    /*mô tả visibility: hidden; sẽ ẩn làm các danh sách con.*/
+    visibility:hidden;
+}
+
+/*hover là khỉ trỏ con chuột vào*/
+#menu ul li:hover ul{
+    /*trỏ vào sẽ hiện các danh sách con*/
+    visibility:visible;
+}
