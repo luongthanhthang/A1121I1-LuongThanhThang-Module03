@@ -1,10 +1,62 @@
+<!--Hãy sử dụng Media Query để tạo một Gallery đơn giản như bản mấu ở đây.-->
+<!--Lưu ý:-->
+<!--Với các màn hình có độ rộng lớn hơn 700px thì hiển thị 4 ảnh trên cùng một dòng.-->
+<!--Với các màn hình nhỏ hơn 700px thì hiển thị 2 ảnh trên cùng một dòng.-->
+<!--Với các màn hình nhỏ hơn 500px thì hiển thị 1 ảnh trên một dòng.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.css">
+    <script src="../../../bootstrap/js/bootstrap.js"></script>
+    <style>
+        img {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+<center>
+    <div class="row mb-3 container-fluid">
+        <div class="card col-md-3 col-sm-6 col-12">
+            <img class="card-img-top" src="image/img_fjords.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
 
+        <div class="card col-md-3 col-sm-6 col-12">
+            <img class="card-img-top" src="image/img_forest.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+
+        <div class="card col-md-3 col-sm-6 col-12">
+            <img class="card-img-top" src="image/img_lights.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+
+        <div class="card col-md-3 col-sm-6 col-12">
+            <img class="card-img-top" src="image/img_mountains.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+    </div>
+</center>
+<div class="row container-fluid">
+    <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px
+        wide, it will show four images side by side, for screens smaller than 700px,
+        it will show two images side by side. For screens smaller than 500px, the images will stack vertically
+        (100%).</p>
+</div>
 </body>
 </html>

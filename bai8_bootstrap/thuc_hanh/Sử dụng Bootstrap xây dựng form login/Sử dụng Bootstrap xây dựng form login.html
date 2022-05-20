@@ -2,9 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.css">
+    <script src="../../../bootstrap/js/bootstrap.js"></script>
+
 </head>
 <body>
-$END$
+<div style="align-items: center; position: relative">
+<center>
+    <div class="container mt-3" style="width: 40%; border: 2px solid;">
+        <img src="bootstrap-logo.png" class="img-fluid mb-3 m-2" alt="..." width="100" height="100">
+        <form>
+            <fieldset>
+                <legend>Please sign in</legend>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Email address">
+                </div>
+                <div class="mb-3">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Password">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-check d-flex justify-content-center">
+                        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck">
+                        <label class="form-check-label ms-2" for="disabledFieldsetCheck">
+                            Can't check this
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary p-2">Remember me</button>
+            </fieldset>
+        </form>
+    </div>
+</center>
+</div>
 </body>
 </html>

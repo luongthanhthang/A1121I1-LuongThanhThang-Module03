@@ -1,0 +1,13 @@
+a:hover, td:hover, .content-1:hover, .content-mid:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+ a:active{
+    background: gray;
+}
+
+ .content-mid {
+     color: #0a53be;
+     font-weight: bold;
+ }

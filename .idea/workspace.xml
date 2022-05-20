@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c51cf2a0-bd46-47b5-86b1-dc1fc0bcbfdd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bai8_bootstrap/bai_tap/Tạo gallery đơn giản sử dụng Bootstrap/Tạo gallery đơn giản sử dụng Bootstrap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai8_bootstrap/bai_tap/Xây dựng Landing Page/Xây dựng Landing Page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai8_bootstrap/bai_tap/Xây dựng Landing Page/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai8_bootstrap/thuc_hanh/Sử dụng Bootstrap xây dựng form login/Sử dụng Bootstrap xây dựng form login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai9_tong_quan_ung_dung_web/thuc_hanh/tao_trang_web_de_dang_nhap_va_hien_thi_loi_chao/TaoTrangWebDeDangNhapVaHienThiLoiChao/src/main/java/ServletLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai9_tong_quan_ung_dung_web/thuc_hanh/tao_trang_web_hien_thi_thoi_gian_he_thong/HienThiThoiGianHeThong/src/main/java/ServerTimeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai9_tong_quan_ung_dung_web/thuc_hanh/ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe/src/main/java/ServletTienTe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai9_tong_quan_ung_dung_web/thuc_hanh/ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe/src/main/webapp/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai9_tong_quan_ung_dung_web/thuc_hanh/ung_dung_product_discount_calulator/src/main/java/ServletProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai9_tong_quan_ung_dung_web/thuc_hanh/ung_dung_product_discount_calulator/src/main/webapp/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai9_tong_quan_ung_dung_web/thuc_hanh/ung_dung_tu_dien_don_gian/UngDungTuDienDonGian/src/main/java/ServletTuDien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="29OUBIO4ouGBhGOVWBWNNe5sKx0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c51cf2a0-bd46-47b5-86b1-dc1fc0bcbfdd" name="Default Changelist" comment="" />
+      <created>1652983488899</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652983488899</updated>
+      <workItem from="1652983494173" duration="522000" />
+      <workItem from="1652984748248" duration="6648000" />
+      <workItem from="1653019644437" duration="4075000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
