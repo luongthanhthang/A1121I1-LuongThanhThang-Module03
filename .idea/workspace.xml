@@ -20,19 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c51cf2a0-bd46-47b5-86b1-dc1fc0bcbfdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bai8_bootstrap/bai_tap/Tạo gallery đơn giản sử dụng Bootstrap/Tạo gallery đơn giản sử dụng Bootstrap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai8_bootstrap/bai_tap/Xây dựng Landing Page/Xây dựng Landing Page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai8_bootstrap/bai_tap/Xây dựng Landing Page/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai8_bootstrap/thuc_hanh/Sử dụng Bootstrap xây dựng form login/Sử dụng Bootstrap xây dựng form login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai9_tong_quan_ung_dung_web/thuc_hanh/tao_trang_web_de_dang_nhap_va_hien_thi_loi_chao/TaoTrangWebDeDangNhapVaHienThiLoiChao/src/main/java/ServletLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai9_tong_quan_ung_dung_web/thuc_hanh/tao_trang_web_hien_thi_thoi_gian_he_thong/HienThiThoiGianHeThong/src/main/java/ServerTimeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai9_tong_quan_ung_dung_web/thuc_hanh/ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe/src/main/java/ServletTienTe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai9_tong_quan_ung_dung_web/thuc_hanh/ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe/src/main/webapp/result.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai9_tong_quan_ung_dung_web/thuc_hanh/ung_dung_product_discount_calulator/src/main/java/ServletProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai9_tong_quan_ung_dung_web/thuc_hanh/ung_dung_product_discount_calulator/src/main/webapp/result.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai9_tong_quan_ung_dung_web/thuc_hanh/ung_dung_tu_dien_don_gian/UngDungTuDienDonGian/src/main/java/ServletTuDien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/hien_thi_danh_sach_khach_hang/HienThiDanhSachKhanhHang/src/main/java/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/hien_thi_danh_sach_khach_hang/HienThiDanhSachKhanhHang/src/main/java/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/src/main/java/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/src/main/java/CalculatorServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test form.html" beforeDir="false" afterPath="$PROJECT_DIR$/test form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +65,10 @@
       <updated>1652983488899</updated>
       <workItem from="1652983494173" duration="522000" />
       <workItem from="1652984748248" duration="6648000" />
-      <workItem from="1653019644437" duration="4075000" />
+      <workItem from="1653019644437" duration="4388000" />
+      <workItem from="1653050609530" duration="619000" />
+      <workItem from="1653158746958" duration="549000" />
+      <workItem from="1653159592185" duration="491000" />
     </task>
     <servers />
   </component>

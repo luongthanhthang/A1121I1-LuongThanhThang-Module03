@@ -1,0 +1,18 @@
+------------link khởi tạo------------
+
+compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+    // https://mvnrepository.com/artifact/javax.servlet/jstl
+    implementation group: 'javax.servlet', name: 'jstl', version: '1.2'
+
+-----------tiếng việt----------------
+
+compileJava.options.encoding = 'UTF-8'
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+
+--------------BỎ VÀO HTML--------------
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+

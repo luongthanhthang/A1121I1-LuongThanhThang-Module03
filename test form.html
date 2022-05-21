@@ -1,29 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        div {
-            width: 300px;
-            height: 250px;
-            border: 1px solid
-        }
-
-        input {
-            margin: 3px;
-        }
-    </style>
+    <title>Calculator</title>
 </head>
 <body>
-<form action="">
-    <div>
-        <h2>Ứng dụng Product Discount Calculator</h2>
-        <input type="text" name="productDescription" placeholder="Mô tả sản phẩm" size="30px">
-        <input type="text" name="listPrice" placeholder="Giá niêm yết của sản phẩm" size="30px">
-        <input type="text" name="discountPercent" placeholder="Tỷ lệ chiết khấu (phần trăm)" size="30px">
-        <input type="submit" value="Calculate Discount (Tính chiết khấu)">
-    </div>
+<h1>Simple Calculator</h1>
+<form method="post" action="/calculate">
+    <fieldset>
+        <legend>Calculator</legend>
+        <table>
+            <tr>
+                <td>First operand: </td>
+                <td><input name="first-operand" type="text"/></td>
+            </tr>
+            <tr>
+                <td>Operator: </td>
+                <td>
+                    <select name="operator">
+                        <option value="+">Addition</option>
+                        <option value="-">Subtraction</option>
+                        <option value="*">Multiplication</option>
+                        <option value="/">Division</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Second operand: </td>
+                <td><input name="second-operand" type="text"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Calculate"/></td>
+            </tr>
+        </table>
+    </fieldset>
 </form>
 </body>
 </html>
