@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c51cf2a0-bd46-47b5-86b1-dc1fc0bcbfdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/hien_thi_danh_sach_khach_hang/HienThiDanhSachKhanhHang/src/main/java/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/hien_thi_danh_sach_khach_hang/HienThiDanhSachKhanhHang/src/main/java/CustomerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/src/main/java/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/src/main/java/CalculatorServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test form.html" beforeDir="false" afterPath="$PROJECT_DIR$/test form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai8_bootstrap/bai_tap/Xây dựng Landing Page/Xây dựng Landing Page.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai8_bootstrap/bai_tap/Xây dựng Landing Page/Xây dựng Landing Page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai8_bootstrap/bai_tap/Xây dựng Landing Page/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/bai8_bootstrap/bai_tap/Xây dựng Landing Page/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +66,7 @@
       <workItem from="1653050609530" duration="619000" />
       <workItem from="1653158746958" duration="549000" />
       <workItem from="1653159592185" duration="491000" />
+      <workItem from="1653162321338" duration="1655000" />
     </task>
     <servers />
   </component>

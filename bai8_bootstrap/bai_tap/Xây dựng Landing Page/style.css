@@ -11,3 +11,16 @@ a:hover, td:hover, .content-1:hover, .content-mid:hover{
      color: #0a53be;
      font-weight: bold;
  }
+
+ .footer {
+     color: #0a53be;
+     font-weight: bold;
+     text-decoration: underline;
+ }
+ .footer:hover {
+     cursor: pointer;
+ }
+
+ th{
+     text-align: center;
+ }
