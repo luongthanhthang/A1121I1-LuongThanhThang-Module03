@@ -20,9 +20,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c51cf2a0-bd46-47b5-86b1-dc1fc0bcbfdd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/java/controller/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/java/model/bean/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/java/model/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/java/model/repository/impl/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/java/model/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/java/model/service/impl/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/webapp/error-404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/webapp/view/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/webapp/view/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/model/bean/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/model/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/model/repository/impl/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/model/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/model/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/webapp/error-404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/webapp/view/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/webapp/view/view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bai8_bootstrap/bai_tap/Xây dựng Landing Page/Xây dựng Landing Page.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai8_bootstrap/bai_tap/Xây dựng Landing Page/Xây dựng Landing Page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai8_bootstrap/bai_tap/Xây dựng Landing Page/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/bai8_bootstrap/bai_tap/Xây dựng Landing Page/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +76,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -67,6 +95,19 @@
       <workItem from="1653158746958" duration="549000" />
       <workItem from="1653159592185" duration="491000" />
       <workItem from="1653162321338" duration="1655000" />
+      <workItem from="1653185327194" duration="66000" />
+      <workItem from="1653185485129" duration="92000" />
+      <workItem from="1653495410527" duration="1502000" />
+      <workItem from="1653496952500" duration="1232000" />
+      <workItem from="1653503909790" duration="23000" />
+      <workItem from="1653503940963" duration="261000" />
+      <workItem from="1653504222474" duration="23000" />
+      <workItem from="1653504254023" duration="222000" />
+      <workItem from="1653504489611" duration="34000" />
+      <workItem from="1653504532416" duration="202000" />
+      <workItem from="1653505047399" duration="77000" />
+      <workItem from="1653505140887" duration="108000" />
+      <workItem from="1653505260865" duration="34000" />
     </task>
     <servers />
   </component>
@@ -84,5 +125,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="158" y="80" key="SettingsEditor" timestamp="1653505292678">
+      <screen x="0" y="0" width="1475" height="789" />
+    </state>
+    <state x="158" y="80" key="SettingsEditor/0.0.1475.789@0.0.1475.789" timestamp="1653505292678" />
   </component>
 </project>

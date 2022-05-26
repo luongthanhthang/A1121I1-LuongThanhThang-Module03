@@ -1,0 +1,31 @@
+Mô tả
+Trong phần này, chúng ta sẽ tạo một ứng dụng để quản lý sản phẩm. Ứng dụng có các chức năng chính sau:
+
+Hiển thị danh sách sản phẩm
+Tạo sản phẩm mới
+Cập nhật thông tin sản phẩm
+Xoá một sản phẩm
+Xem chi tiết một sản phẩm
+Tìm kiếm sản phẩm theo tên
+Các thuộc tính của sản phẩm bao gồm: id, tên sản phẩm, giá sản phẩm, mô tả của sản phẩm, nhà sản xuất.
+
+Hướng dẫn
+Bước 1: Tạo dự án Java web
+
+Bước 2: Tạo model Product với các thuộc tính cần thiết
+
+Bước 3: Tạo ProductService và ProductServiceImpl để giả lập danh sách các sản phẩm
+
+Bước 4: Tạo ProductServlet và viết mã để điều hướng việc xử lý dựa theo thông tin về action.
+
+Bước 5: Phát triển tính năng hiển thị danh sách sản phẩm
+
+Bước 6: Phát triển tính năng thêm sản phẩm mới
+
+Bước 7: Phát triển tính năng cập nhật thông tin sản phẩm
+
+Bước 8: Phát triển tính năng xoá sản phẩm
+
+Bước 9: Phát triển tính năng xem chi tiết sản phẩm
+
+Bước 10: Phát triển tính năng tìm kiếm sản phẩm theo tên
