@@ -20,36 +20,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c51cf2a0-bd46-47b5-86b1-dc1fc0bcbfdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/java/controller/ProductServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/java/model/bean/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/java/model/repository/IProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/java/model/repository/impl/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/java/model/service/IProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/java/model/service/impl/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/webapp/error-404.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/webapp/view/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/webapp/view/delete.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/webapp/view/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/webapp/view/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/bai_tap/ung_dung_quan_ly_san_pham/src/main/webapp/view/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/controller/CustomerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/model/bean/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/model/repository/ICustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/model/repository/impl/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/model/service/ICustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/java/model/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/webapp/error-404.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/webapp/view/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/webapp/view/delete.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/webapp/view/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/webapp/view/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai11_MVC_Model/thuc_hanh/ung_dung_quan_li_khach_hang/src/main/webapp/view/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/java/controller/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/java/model/bean/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/java/model/repository/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/java/model/repository/impl/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/java/model/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/java/model/service/impl/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/template/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai12_JDBC_and_CRUD/thuc_hanh/quan_ly _user_su_dung_jsp_servlet_jdbc_mysql/src/main/webapp/user/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bai10_ jsp_va_jstl/bai_tap/ung_dung_calculator/UngDungCalculator/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai8_bootstrap/bai_tap/Xây dựng Landing Page/Xây dựng Landing Page.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai8_bootstrap/bai_tap/Xây dựng Landing Page/Xây dựng Landing Page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/furama.sql" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/furama.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ghi chú.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ghi chú.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +135,8 @@
       <workItem from="1653505047399" duration="77000" />
       <workItem from="1653505140887" duration="108000" />
       <workItem from="1653505260865" duration="34000" />
+      <workItem from="1653655355057" duration="67000" />
+      <workItem from="1653660344010" duration="12000" />
     </task>
     <servers />
   </component>

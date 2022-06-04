@@ -604,7 +604,7 @@ on hop_dong for each row
 begin
 declare tong_so_luong_ban_ghi_con_lai int;
 set tong_so_luong_ban_ghi_con_lai =  (select count(hop_dong.ma_hop_dong) from hop_dong);
-insert into tong_so_luong_ban_ghi_con_lai 
+insert into tong_so_luong_ban_ghi_con_lai device
 end;
 // delimiter ;
 
