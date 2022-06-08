@@ -112,7 +112,6 @@
             </div>
         </div>
     </div>
-
 </div>
 
 
@@ -134,7 +133,7 @@
 </div>
 
 
-<!--+++++++++++++card+++++++++++++-->
+<!--+++++++++++++slide+++++++++++++-->
 <div>
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -172,7 +171,7 @@
     </div>
 </div>
 
-<div class="container mt-3">
+<div class="container mt-3 mb-0">
     <div class="row">
         <div class="col-md-4 m-0">
             <h2 class="font-text-footer" style="font-size: 24px">THIS WORLD CLASS RESORT, FURAMA DANANG, REPUTABLE FOR
@@ -182,7 +181,7 @@
         <div class="col-md-4 m-0">
             <iframe src="https://www.youtube.com/embed/IjlT_4mvd-c" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    allowfullscreen style="height: 300px; width: 400px"></iframe>
         </div>
         <div class="col-md-4 m-0">
             <p class="font-text">
@@ -200,37 +199,52 @@
     </div>
 </div>
 
-
 <!--++++++++++++++++++sidebar++++++++++++++++=-->
-
-<div class="row">
-    <div class="col-md-3 row">
-        <div class="col-md-12">
-            <div class="card" style="width: 18rem;">
+<div>
+    <div class="row m-0">
+        <div class="col-md-2 p-0">
+            <div class="card">
                 <img src="image/card/side-bar.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="font-text-footer card-text">CULINARY</p>
-                    <p class="font-text card-text">The resort’s culinary experience features a mixture of the authentic and locally inspired Vietnamese, Asian, Italian and other European cuisines plus the best imported steaks. The resort presents guests with varied gastronomic venues – the hip and breezy bar overlooking the beach, the exclusive Lagoon pool surrounded by a tropical garden, the true Italian flare offered at the Don Cipriani’s, the refined Asian touch at Café Indochine or the authentic central Vietnam cuisine at the Danaksara.</p>
+                    <p class="font-text card-text">The resort’s culinary experience features a mixture of the
+                        authentic
+                        and locally inspired Vietnamese, Asian, Italian and other European cuisines plus the best
+                        imported steaks. The resort presents guests with varied gastronomic venues – the hip and
+                        breezy
+                        bar overlooking the beach, the exclusive Lagoon pool surrounded by a tropical garden, the
+                        true
+                        Italian flare offered at the Don Cipriani’s, the refined Asian touch at Café Indochine or
+                        the
+                        authentic central Vietnam cuisine at the Danaksara.</p>
                 </div>
             </div>
-        </div>
-        <div class="col-md-12">
-            <div class="card" style="width: 18rem;">
+            <div class="card">
                 <img src="image/card/side-bar-2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="font-text-footer card-text">MEETING and EVENT</p>
-                    <p class="font-text card-text">A well-appointed International Convention Palace with ballrooms can accommodate up to 1,000 people in style, with another ten function rooms for 50 to 300 people each. A variety of cultural-themed parties on the beach or around the lagoon, in the ballrooms or outside the resort, with the surprising arrivals of VIPs from Helicopter landing on the resort’s own Helipad…</p>
-
+                    <p class="font-text card-text">A well-appointed International Convention Palace with ballrooms
+                        can
+                        accommodate up to 1,000 people in style, with another ten function rooms for 50 to 300
+                        people
+                        each. A variety of cultural-themed parties on the beach or around the lagoon, in the
+                        ballrooms
+                        or outside the resort, with the surprising arrivals of VIPs from Helicopter landing on the
+                        resort’s own Helipad…</p>
                 </div>
             </div>
         </div>
+
+<!--        +++++++++++++++++++content++++++++++++-->
+        <div class="col-md-10 p-0">
+            <img src="image/Furama-resort-danang-103-105-vo-nguyen-giap-da-nang-fly-cam.jpg" height="100%"
+                 width="100%"/></div>
     </div>
-    <div class="col-md-9"></div>
 </div>
 
 
 <!--+++++++++++++++footer++++++++-->
-<div class="position-relative mx-0 bottom-0 row mt-3" style="background-color: #7FFFD4; width: 100%">
+<div class="position-relative mx-0 bottom-0 row" style="background-color: #7FFFD4; width: 100%">
     <div class="col-md-1"></div>
     <div class="col-md-3 bg-light container">
         <h2 class="font-text-footer">How to Get to Us</h2>
@@ -285,7 +299,7 @@
                 <p style="font-size: 14px">Tel.: 84-236-3847 333/888 * Fax: 84-236-3847 666</p>
                 <p style="font-size: 14px"> Email: reservation@furamavietnam.com
                 </p>
-                <p style="font-size: 14px">* www.furamavietnam.com GDS Codes: Amadeus-GD DADFUR,
+                <p style="font-size: 14px">www.furamavietnam.com GDS Codes: Amadeus-GD DADFUR,
                     Galileo/Apollo-GD 16236, Sabre-GD 032771, Worldspan- GD DADFU</p>
             </div>
         </div>
@@ -297,18 +311,4 @@
 <script src="../bootstrap/jquery-3.6.0.min.js"></script>
 <script src="../bootstrap/js/bootstrap.js"></script>
 </html>
-<script>
-    let date = new Date();
-    let time = date.toLocaleTimeString([], {timeStyle: 'short'});
-    document.getElementById("time").innerText = time;
-
-
-    // -----chạy thời gian thực----
-    function localTime() {
-        let date = new Date();
-        let time = date.toLocaleTimeString([], {timeStyle: 'short'});
-        document.getElementById("time").innerText = time;
-    }
-
-    setInterval(localTime, 1000);
-</script>
+<script src="main.js"></script>
