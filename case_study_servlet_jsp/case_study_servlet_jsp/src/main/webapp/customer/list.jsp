@@ -27,7 +27,7 @@
                     <a class="navbar-brand text-light click" href="/employee">Employee</a>
                     <a class="navbar-brand text-light click" href="/customer">Customer</a>
                     <a class="navbar-brand text-light click" href="/service">Service</a>
-                    <a class="navbar-brand text-light click" href="/contact">Contract</a>
+                    <a class="navbar-brand text-light click" href="/contract">Contract</a>
                     <form class="d-flex m-0" action="/customer" method="get">
                         <input class="me-2" name="nameSearch" placeholder="Nhập tên" value="${nameSearch}">
                         <input class="me-2" name="emailSearch" placeholder="Nhập email" value="${emailSearch}">
@@ -37,91 +37,100 @@
                                 <option value="${customerType.typeId}">${customerType.typeName}</option>
                             </c:forEach>
                         </select>
-                        <button class="btn btn-outline-light" type="submit" name="action" value="search">Search</button>
+                        <button class="btn btn-outline-light" type="submit" name="action" value="search">Search
+                        </button>
                     </form>
                 </div>
             </nav>
         </div>
 
         <%--+++++++++content++++++++--%>
-        <div class="row">
-            <%@include file="/template/layout/sidebar.jsp" %>
-            <div class="col-md-10">
-                <center>
-                    <h1 class="font-text-footer">Customer List</h1>
-                    <c:if test="${mess !=null}">
-                        <h2 class="text-danger">${mess}</h2>
-                    </c:if>
-                </center>
-                <br>
-                <table id="tableCustomer" class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Type Name</th>
-                            <th>Name</th>
-                            <th>Birthday</th>
-                            <th>Gender</th>
-                            <th>Id Card</th>
-                            <th>Phone</th>
-                            <th>Email</th>
-                            <th>Address</th>
-                            <th colspan="2"><a href="/customer?action=create">
-                                <button class="btn btn-secondary w-100">Create</button>
-                            </a></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <c:forEach var="customer" items="${customerList}">
+        <div class="container-fluid">
+            <div class="row">
+                <%@include file="/template/layout/sidebar.jsp" %>
+                <div class="col-md-10">
+                    <center>
+                        <h1 class="font-text-footer">Customer List</h1>
+                        <c:if test="${mess !=null}">
+                            <h2 class="text-danger">${mess}</h2>
+                        </c:if>
+                    </center>
+                    <br>
+                    <table id="tableCustomer" class="table table-hover">
+                        <thead>
                             <tr>
-                                <td><c:out value="${customer.id}"/></td>
-                                <c:forEach items="${customerTypeList}" var="customerType">
-                                    <c:if test="${customerType.typeId == customer.typeId}">
-                                        <td><c:out value="${customerType.typeName}"/></td>
-                                    </c:if>
-                                </c:forEach>
-                                <td><c:out value="${customer.name}"/></td>
-                                <td style="width: 90px;"><c:out value="${customer.birthday}"/></td>
-                                <c:if test="${customer.gender == 0}">
-                                    <td>Nữ</td>
-                                </c:if>
-                                <c:if test="${customer.gender == 1}">
-                                    <td>Nam</td>
-                                </c:if>
-                                <td><c:out value="${customer.idCard}"/></td>
-                                <td><c:out value="${customer.phone}"/></td>
-                                <td><c:out value="${customer.email}"/></td>
-                                <td><c:out value="${customer.address}"/></td>
-                                <td>
-                                    <a href="/customer?action=edit&id=${customer.id}">
-                                        <button class="btn btn-primary">Edit</button>
-                                    </a>
-                                </td>
-                                <td>
-                                    <!-- Button trigger modal -->
-                                    <button type="button" onclick="showInfo('${customer.id}','${customer.name}')"
-                                            class="btn btn-danger"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#deleteModal">
-                                        Delete
-                                    </button>
-                                </td>
+                                <th>ID</th>
+                                <th>Type Name</th>
+                                <th>Name</th>
+                                <th>Birthday</th>
+                                <th>Gender</th>
+                                <th>Id Card</th>
+                                <th>Phone</th>
+                                <th>Email</th>
+                                <th>Address</th>
+                                <th></th>
+                                <th><a href="/customer?action=create">
+                                    <button class="btn btn-secondary w-100">Create</button>
+                                </a></th>
                             </tr>
-                        </c:forEach>
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            <c:forEach var="customer" items="${customerList}">
+                                <tr>
+                                    <td><c:out value="${customer.id}"/></td>
+                                    <c:forEach items="${customerTypeList}" var="customerType">
+                                        <c:if test="${customerType.typeId == customer.typeId}">
+                                            <td><c:out value="${customerType.typeName}"/></td>
+                                        </c:if>
+                                    </c:forEach>
+                                    <td><c:out value="${customer.name}"/></td>
+                                    <td style="width: 90px;"><c:out value="${customer.birthday}"/></td>
+                                    <c:if test="${customer.gender == 0}">
+                                        <td>Nữ</td>
+                                    </c:if>
+                                    <c:if test="${customer.gender == 1}">
+                                        <td>Nam</td>
+                                    </c:if>
+                                    <td><c:out value="${customer.idCard}"/></td>
+                                    <td><c:out value="${customer.phone}"/></td>
+                                    <td><c:out value="${customer.email}"/></td>
+                                    <td><c:out value="${customer.address}"/></td>
+                                    <td>
+                                        <a href="/customer?action=edit&id=${customer.id}">
+                                            <button class="btn btn-primary">Edit</button>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" onclick="showInfo('${customer.id}','${customer.name}')"
+                                                class="btn btn-danger"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#deleteModal">
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                            </c:forEach>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
+
+
+
         <!-- Modal -->
-        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
             <div class="modal-dialog">
                 <%--            ---------thêm thẻ form---------%>
                 <form action="/customer" method="get">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title text-danger" id="exampleModalLabel">Xác nhận xoá !</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <input type="text" hidden id="idCustomer" name="idDelete">
@@ -130,7 +139,8 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary" name="action" value="delete">Delele</button>
+                            <button type="submit" class="btn btn-primary" name="action" value="delete">Delele
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -142,8 +152,9 @@
             <%@include file="/template/layout/footer.jsp" %>
         </div>
     </body>
+    <%--    <script src="template/bootstrap/js/bootstrap.js"></script>--%>
+
     <script src="template/bootstrap/jquery-3.6.0.min.js"></script>
-    <script src="template/bootstrap/js/bootstrap.js"></script>
     <script src="template/datatable/js/jquery.dataTables.min.js"></script>
     <script src="template/datatable/js/dataTables.bootstrap4.min.js"></script>
     <script src="template/main.js"></script>

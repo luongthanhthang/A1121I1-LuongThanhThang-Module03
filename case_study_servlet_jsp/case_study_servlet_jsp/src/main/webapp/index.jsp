@@ -131,7 +131,7 @@
             <a class="navbar-brand text-light click" href="/employee">Employee</a>
             <a class="navbar-brand text-light click" href="/customer">Customer</a>
             <a class="navbar-brand text-light click" href="/service">Service</a>
-            <a class="navbar-brand text-light click" href="/contact">Contract</a>
+            <a class="navbar-brand text-light click" href="/contract">Contract</a>
             <form class="d-flex m-0">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-light" type="submit">Search</button>
@@ -288,11 +288,11 @@
             <li class="my-3">Rack Rate</li>
             <li class="my-3">Lifestyle Blog</li>
             <li class="my-3">Work with us</li>
-            <li class="my-3">Contact us</li>
+            <li class="my-3">contract us</li>
         </ul>
     </div>
     <div class="col-md-3 mt-5">
-        <h2 class="font-text-footer">Contact US</h2>
+        <h2 class="font-text-footer">contract US</h2>
         <div class="row">
             <div class="col-md-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"

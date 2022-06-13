@@ -27,7 +27,7 @@
                     <a class="navbar-brand text-light click" href="/employee">Employee</a>
                     <a class="navbar-brand text-light click" href="/customer">Customer</a>
                     <a class="navbar-brand text-light click" href="/service">Service</a>
-                    <a class="navbar-brand text-light click" href="/contact">Contract</a>
+                    <a class="navbar-brand text-light click" href="/contract">Contract</a>
                     <form class="d-flex m-0">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-light" type="submit">Search</button>
@@ -73,9 +73,16 @@
                                        value="${customer.birthday}">
                                 <span class="input-group-text">Type</span>
                                 <select name="type" class="me-2">
-                                    <option value="">Chọn</option>
                                     <c:forEach items="${customerTypeList}" var="customerType">
-                                        <option value="${customerType.typeId}">${customerType.typeName}</option>
+                                        <c:if test="${customerType.typeId == customer.typeId}">
+                                            <option value="${customerType.typeId}">${customerType.typeName}</option>
+                                        </c:if>
+                                    </c:forEach>
+
+                                    <c:forEach items="${customerTypeList}" var="customerType">
+                                        <c:if test="${customer.typeId != customerType.typeId}">
+                                            <option value="${customerType.typeId}">${customerType.typeName}</option>
+                                        </c:if>
                                     </c:forEach>
                                 </select>
                             </div>

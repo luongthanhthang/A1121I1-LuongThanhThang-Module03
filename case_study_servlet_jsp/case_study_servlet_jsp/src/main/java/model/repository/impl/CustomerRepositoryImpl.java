@@ -3,11 +3,13 @@ package model.repository.impl;
 import model.bean.Customer;
 import model.repository.BaseRepository;
 import model.repository.ICustomerRepository;
+import util.Validation;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +17,9 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
     private static final String SELECT_ALL_CUSTOMER = "select * from customer;";
     private static final String SEARCH = "select * from customer where `customer_name` like ? and `customer_email` like ? and customer_type_id like ?;";
     private static final String INSERT_CUSTOMER_SQL = "insert into customer(customer_type_id,customer_name,customer_birthday,customer_gender,customer_id_card,customer_phone,customer_email,customer_address) values (?,?,?,?,?,?,?,?);";
+    // xoá customer thì xoá luôn các khoá liên quan, ở đây là contract, contract liên quan đến detail_contract
+    private static final String DELETE_CONTRACT_DETAIL_SQL = "delete from contract_detail where contract_id in (select contract_id from contract where customer_id = ?);";
+    private static final String DELETE_CONTRACT_SQL = "delete from contract where customer_id = ?;";
     private static final String DELETE_CUSTOMER_SQL = "delete from customer where customer_id = ?;";
     private static final String UPDATE_CUSTOMER_SQL = "update customer set customer_type_id = ?,customer_name = ?,customer_birthday = ?,customer_gender = ?,customer_id_card = ? ,customer_phone = ?,customer_email = ?,customer_address = ? where customer_id = ?;";
     private static final String SELECT_CUSTOMER_BY_ID = "select * from customer where customer_id =?";
@@ -31,7 +36,8 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
                 Integer id = resultSet.getInt("customer_id");
                 Integer typeId = resultSet.getInt("customer_type_id");
                 String name = resultSet.getString("customer_name");
-                String birthday = resultSet.getString("customer_birthday");
+                String birthday = Validation.formatDate(resultSet.getString("customer_birthday"));
+
                 Integer gender = resultSet.getInt("customer_gender");
                 String idCard = resultSet.getString("customer_id_card");
                 String phone = resultSet.getString("customer_phone");
@@ -96,10 +102,14 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
         return false;
     }
 
+
     @Override
     public boolean deleteCustomer(int id) {
-        try (Connection connection = BaseRepository.getConnect();
-             PreparedStatement preparedStatement = connection.prepareStatement(DELETE_CUSTOMER_SQL);) {
+        deleteContractDetail(id);
+        deleteContract(id);
+        Connection connection = BaseRepository.getConnect();
+        try (PreparedStatement preparedStatement = connection.prepareStatement(DELETE_CUSTOMER_SQL);) {
+            preparedStatement.setInt(1, id);
             int update = preparedStatement.executeUpdate();
             if (update != 0) {
                 return true;
@@ -108,6 +118,26 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
             throwables.printStackTrace();
         }
         return false;
+    }
+
+    public void deleteContract(int id) {
+        Connection connection = BaseRepository.getConnect();
+        try (PreparedStatement preparedStatement = connection.prepareStatement(DELETE_CONTRACT_SQL);) {
+            preparedStatement.setInt(1, id);
+            preparedStatement.executeUpdate();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
+
+    public void deleteContractDetail(int id) {
+        Connection connection = BaseRepository.getConnect();
+        try (PreparedStatement preparedStatement = connection.prepareStatement(DELETE_CONTRACT_DETAIL_SQL);) {
+            preparedStatement.setInt(1, id);
+            preparedStatement.executeUpdate();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
     }
 
     @Override

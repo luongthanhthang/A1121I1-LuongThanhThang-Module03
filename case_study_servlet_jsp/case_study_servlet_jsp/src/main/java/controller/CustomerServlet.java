@@ -14,7 +14,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Map;
 
 @WebServlet(name = "CustomerServlet", urlPatterns = "/customer")
 public class CustomerServlet extends HttpServlet {
@@ -122,7 +127,6 @@ public class CustomerServlet extends HttpServlet {
     }
 
 
-
     private void showNewForm(HttpServletRequest request, HttpServletResponse response) {
         List<CustomerType> customerTypeList = customerTypeService.findAll();
         request.setAttribute("customerTypeList", customerTypeList);
@@ -137,21 +141,38 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void insertNewCustomer(HttpServletRequest request, HttpServletResponse response) {
+        List<CustomerType> customerTypeList = customerTypeService.findAll();
+
         Integer typeId = Integer.parseInt(request.getParameter("type"));
         String name = request.getParameter("name");
         String birthday = request.getParameter("birthday");
+
+
         Integer gender = Integer.parseInt(request.getParameter("gender"));
         String idCard = request.getParameter("idCard");
         String phone = request.getParameter("phone");
         String email = request.getParameter("email");
         String address = request.getParameter("address");
 
+
         Customer customer = new Customer(typeId, name, birthday, gender, idCard, phone, email, address);
-        boolean flag = customerService.insertCustomer(customer);
-        if (flag) {
+        Map<String, String> errors = customerService.insertCustomer(customer);
+        if (errors.isEmpty()) {
             request.setAttribute("mess", "thêm mới thành công");
         } else {
+            // lấy lại những gì đã nhập
+            request.setAttribute("type", typeId);
+            request.setAttribute("name", name);
+            request.setAttribute("birthday", birthday);
+            request.setAttribute("gender", gender);
+            request.setAttribute("idCard", idCard);
+            request.setAttribute("phone", phone);
+            request.setAttribute("email", email);
+            request.setAttribute("address", address);
+
             request.setAttribute("mess", "thêm mới thất bại");
+            request.setAttribute("customerTypeList", customerTypeList);
+            request.setAttribute("errors", errors);
         }
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/create.jsp");
@@ -163,7 +184,8 @@ public class CustomerServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
-//    +++++++++++++++++++edit++++++
+
+    //    +++++++++++++++++++edit++++++
     private void showEditForm(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
         Customer customer = customerService.selectCustomer(id);
@@ -185,6 +207,7 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void updateCustomer(HttpServletRequest request, HttpServletResponse response) {
+        List<CustomerType> customerTypeList = customerTypeService.findAll();
         int id = Integer.parseInt(request.getParameter("id"));
         Integer typeId = Integer.parseInt(request.getParameter("type"));
         String name = request.getParameter("name");
@@ -198,8 +221,12 @@ public class CustomerServlet extends HttpServlet {
         boolean flag = customerService.updateCustomer(customer);
         if (flag) {
             request.setAttribute("mess", "edit thành công");
+            request.setAttribute("customer", customer);
+            request.setAttribute("customerTypeList", customerTypeList);
         } else {
             request.setAttribute("mess", "edit thất bại");
+            request.setAttribute("customer", customer);
+            request.setAttribute("customerTypeList", customerTypeList);
         }
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/edit.jsp");
