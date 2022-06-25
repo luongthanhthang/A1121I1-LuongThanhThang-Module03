@@ -116,10 +116,10 @@
                             <div class="input-group mb-5">
                                 <span class="me-2 text-danger" id="birthdayNotInput"
                                       style="left: 5px; position: absolute; font-weight: bold"></span>
-<%--                                <c:if test="${errors!=null}">--%>
-<%--                                    <p class="me-2 text-danger"--%>
-<%--                                       style="left: 5px; position: absolute; font-weight: bold">${errors.get("birthday")}</p>--%>
-<%--                                </c:if>--%>
+                                <%--                                <c:if test="${errors!=null}">--%>
+                                <%--                                    <p class="me-2 text-danger"--%>
+                                <%--                                       style="left: 5px; position: absolute; font-weight: bold">${errors.get("birthday")}</p>--%>
+                                <%--                                </c:if>--%>
 
                                 <span class="me-2 text-danger" id="typeNotInput"
                                       style="right: 5px; position: absolute; font-weight: bold"></span>
@@ -165,12 +165,12 @@
                             </div>
 
                             <%--Thông báo không nhập input--%>
-                            <div class="input-group mb-5">
-                                <span class="me-2 text-danger" id="emailNotInput"
-                                      style="left: 5px; position: absolute; font-weight: bold"></span>
-                                <c:if test="${errors!=null}">
-                                    <p class="me-2 text-danger"
-                                       style="left: 5px; position: absolute; font-weight: bold">${errors.get("email")}</p>
+
+                            <span class="me-2 text-danger" id="emailNotInput"
+                                  style="left: 5px; position: absolute; font-weight: bold"></span>
+                            <c:if test="${errors!=null}">
+                            <div class="input-group mb-5"><p class="me-2 text-danger"
+                                                             style="left: 5px; position: absolute; font-weight: bold">${errors.get("email")}</p>
                                 </c:if>
 
                                 <span class="me-2 text-danger" id="addressNotInput"
@@ -178,7 +178,12 @@
                             </div>
 
                             <br>
-                            <button type="submit" class="btn btn-primary">Create</button>
+                            <div class="input-group mb-5 d-flex align-content-center justify-content-center">
+                                <button type="submit" class="btn btn-primary">Create</button>
+                                <button type="button" class="btn btn-primary ms-3"><a style="text-decoration: none"
+                                                                                      class="text-light"
+                                                                                      href="/customer">Huỷ</a></button>
+                            </div>
                         </form>
                     </div>
                 </center>

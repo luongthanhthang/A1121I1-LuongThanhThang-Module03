@@ -51,8 +51,18 @@
                     <div class="col-md-2"></div>
                 </div>
 
-                <div class="col-md-6 d-flex justify-content-center align-items-end" style="flex-direction: column;">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="col-md-6 d-flex justify-content-center align-items-end row">
+    <div class="col-md-5 row mb-3 ">
+    <c:if test="${sessionUser!=null}">
+        <span class="text-info col-md-6 $green-700 fw-bold">${sessionUser.username}</span>
+        <a class="text-info col-md-6 fw-bold" href="/logout" style="text-decoration: none;">logout</a>
+    </c:if>
+    <c:if test="${sessionUser==null}">
+        <a class="text-info col-md-6 fw-bold" href="/login" style="text-decoration: none;">login</a>
+    </c:if>
+        </div>
+
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light col-md-7" style="flex-direction: column-reverse;">
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">

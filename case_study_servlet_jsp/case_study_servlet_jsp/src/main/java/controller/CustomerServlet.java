@@ -238,6 +238,5 @@ public class CustomerServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
-
 }
 

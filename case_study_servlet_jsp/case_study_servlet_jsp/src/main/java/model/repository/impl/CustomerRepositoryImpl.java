@@ -67,6 +67,7 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
                 Integer typeId = resultSet.getInt("customer_type_id");
                 String name = resultSet.getString("customer_name");
                 String birthday = resultSet.getString("customer_birthday");
+                System.out.println(birthday);
                 Integer gender = resultSet.getInt("customer_gender");
                 String idCard = resultSet.getString("customer_id_card");
                 String phone = resultSet.getString("customer_phone");

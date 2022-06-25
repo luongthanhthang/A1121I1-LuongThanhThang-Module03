@@ -93,8 +93,8 @@
                                     </c:if>
                                     <td><c:out value="${customer.idCard}"/></td>
                                     <td><c:out value="${customer.phone}"/></td>
-                                    <td><c:out value="${customer.email}"/></td>
-                                    <td><c:out value="${customer.address}"/></td>
+                                    <td style="word-break: break-word;"><c:out value="${customer.email}"/></td>
+                                    <td style="word-break: break-word;"><c:out value="${customer.address}"/></td>
                                     <td>
                                         <a href="/customer?action=edit&id=${customer.id}">
                                             <button class="btn btn-primary">Edit</button>

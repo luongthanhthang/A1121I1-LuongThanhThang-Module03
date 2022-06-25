@@ -25,6 +25,28 @@ public class Validation {
 //        return date.matches(redDate);
 //    }
 
+    public static boolean checkNumberInt(Integer number) {
+        return number > 0;
+    }
+
+    public static boolean checkNumberDouble(Double number) {
+        return number > 0;
+    }
+
+    public static boolean checkIdGround(String idGround) {
+        String regIdGround = "^[A-Z]{3}-[A-Z]{2}-$[A-Z]{2}";
+        return idGround.matches(regIdGround);
+    }
+
+    public static boolean checkArea(Double areaGround) {
+        return areaGround > 20;
+    }
+
+    public static boolean check(Double areaGround) {
+        return areaGround > 20;
+    }
+
+
     public static String formatDate(String date) {
         DateTimeFormatter formatterStart = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         DateTimeFormatter formatterEnd = DateTimeFormatter.ofPattern("dd/MM/yyyy");
@@ -36,4 +58,6 @@ public class Validation {
         DateTimeFormatter formatterEnd = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         return LocalDateTime.parse(date, formatterStart).format(formatterEnd);
     }
+
+
 }
