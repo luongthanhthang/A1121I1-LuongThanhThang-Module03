@@ -20,135 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c51cf2a0-bd46-47b5-86b1-dc1fc0bcbfdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/java/config/CharsetFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/java/controller/BookCardServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/java/model/bean/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/java/model/bean/BookBorrowCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/java/model/bean/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/java/model/repository/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/java/model/repository/IBookBorrowCardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/java/model/repository/IBookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/java/model/repository/impl/BookBorrowCardRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/java/model/repository/impl/BookRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/java/model/repository/impl/StudentRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/java/model/service/IBookBorrowCardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/java/model/service/IBookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/java/model/service/IStudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/java/model/service/impl/BookBorrowCardServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/java/model/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/java/model/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/book/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/book/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/jquery-3.6.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3/bai_thi_module_3/src/main/webapp/template/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/java/config/CharsetFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/java/controller/ProductServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/java/model/bean/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/java/model/bean/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/java/model/repository/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/java/model/repository/ICategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/java/model/repository/IProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/java/model/repository/Impl/CategoryRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/java/model/repository/Impl/ProductRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/java/model/service/ICategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/java/model/service/IProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/java/model/service/Impl/CategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/java/model/service/Impl/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/java/util/Validation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/product/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/product/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/product/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/jquery-3.6.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_thi_module_3_thi_lai/bai_thi_module_3_thi_lai/src/main/webapp/template/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
@@ -157,15 +29,9 @@
       <change beforePath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/build/classes/java/main/model/repository/impl/CustomerRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/build/classes/java/main/model/repository/impl/CustomerRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/build/classes/java/main/util/Validation.class" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/build/classes/java/main/util/Validation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/build/libs/case_study_servlet_jsp-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/build/libs/case_study_servlet_jsp-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/src/main/java/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/src/main/java/controller/CustomerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/src/main/java/model/repository/impl/CustomerRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/src/main/java/model/repository/impl/CustomerRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/src/main/java/util/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/src/main/java/util/Validation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/src/main/webapp/customer/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/src/main/webapp/customer/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/src/main/webapp/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/src/main/webapp/customer/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/src/main/webapp/template/layout/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_servlet_jsp/case_study_servlet_jsp/src/main/webapp/template/layout/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,8 +42,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -185,6 +51,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="29OUBIO4ouGBhGOVWBWNNe5sKx0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -195,6 +62,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Module 5" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -248,6 +116,9 @@
       <workItem from="1655543458907" duration="50000" />
       <workItem from="1655687731536" duration="624000" />
       <workItem from="1655832802304" duration="951000" />
+      <workItem from="1658925989664" duration="781000" />
+      <workItem from="1660725241893" duration="3635000" />
+      <workItem from="1660736517039" duration="32000" />
     </task>
     <servers />
   </component>
@@ -267,10 +138,23 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="518" y="150" key="FileChooserDialogImpl" timestamp="1660736546774">
+      <screen x="0" y="0" width="1475" height="789" />
+    </state>
+    <state x="518" y="150" key="FileChooserDialogImpl/0.0.1475.789@0.0.1475.789" timestamp="1660736546774" />
+    <state x="518" y="150" key="FileChooserDialogImpl/1920.-6.1475.789/0.0.1475.789@0.0.1475.789" timestamp="1660725308935" />
     <state x="158" y="80" key="SettingsEditor" timestamp="1653505292678">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state x="158" y="80" key="SettingsEditor/0.0.1475.789@0.0.1475.789" timestamp="1653505292678" />
+    <state x="731" y="0" width="750" height="796" key="dock-window-1" timestamp="1660726709420">
+      <screen x="0" y="0" width="1475" height="789" />
+    </state>
+    <state x="731" y="0" width="750" height="796" key="dock-window-1/1920.-6.1475.789/0.0.1475.789@0.0.1475.789" timestamp="1660726709420" />
+    <state x="852" y="0" width="629" height="796" key="dock-window-2" timestamp="1660726709420">
+      <screen x="0" y="0" width="1475" height="789" />
+    </state>
+    <state x="852" y="0" width="629" height="796" key="dock-window-2/1920.-6.1475.789/0.0.1475.789@0.0.1475.789" timestamp="1660726709420" />
     <state x="400" y="110" width="672" height="678" key="search.everywhere.popup" timestamp="1654490301236">
       <screen x="0" y="0" width="1475" height="789" />
     </state>

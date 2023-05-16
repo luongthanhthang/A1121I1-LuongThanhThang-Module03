@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2f8b985e-f031-447d-8dbf-6f6bdbed36d2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../build/classes/java/main/util/Validation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../build/classes/java/main/util/Validation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../build/libs/case_study_servlet_jsp-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../build/libs/case_study_servlet_jsp-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Báo cáo tuần/[A1121I1]_Lương Thanh Thắng_báo cáo tuần (1).docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Báo cáo tuần/[A1121I1]_Lương Thanh Thắng_báo cáo tuần 02-06-2022.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Báo cáo tuần/[A1121I1]_Lương Thanh Thắng_báo cáo tuần 05-05-2022.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Báo cáo tuần/[A1121I1]_Lương Thanh Thắng_báo cáo tuần 09-06-2022.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Báo cáo tuần/[A1121I1]_Lương Thanh Thắng_báo cáo tuần 12-05-2022.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Báo cáo tuần/[A1121I1]_Lương Thanh Thắng_báo cáo tuần 19-05-2022.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Báo cáo tuần/[A1121I1]_Lương Thanh Thắng_báo cáo tuần 26-05-2022.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Báo cáo tuần/[A1121I1]_Lương Thanh Thắng_báo cáo tuần 28-04-2022.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/CG-DN Case Study for Database_v1.2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/CG-DN Case Study for Database_v1.2_Answer_and_Data.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/CG-DN Case Study for JSP&amp;Servlet.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/CauHoiAuditModule3.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Ghi bài mẫu.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Keyword/A0721-JWDB Đề thi thực hành.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Keyword/Bố cục.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Keyword/Ghi bài mẫu.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Keyword/JDBC API .docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Keyword/JSP và JSTL.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Keyword/Kiểu dữ liệu.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Keyword/Toán tử trong WHERE.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Keyword/Transaction.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Keyword/Tổng quan ứng dụng Web.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Keyword/css.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Keyword/~$721-JWDB Đề thi thực hành.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Slide/Slide 1 - Database Introduction.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Slide/Slide 10 - JSP  JSTL.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Slide/Slide 11 - MVC.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Slide/Slide 12 - JDBC  CRUD.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Slide/Slide 13 - JDBC Querying  Transaction.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Slide/Slide 14 - Packaging  Dependences Management.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Slide/Slide 2 - Database Design.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Slide/Slide 3 - Database Query.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Slide/Slide 4 - Hàm thông dụng.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Slide/Slide 5 - Indexs, Store Procedure, Views.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Slide/Slide 6 - CSS.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Slide/Slide 7 - Thiết kế bố cục trang web.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Slide/Slide 8 - Bootstrap.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/Slide/Slide 9 - Web Application OverView.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/[A1121I1] TKB Web backend Develop with Jsp &amp; Servlet.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/Module 3/~$-DN Case Study for Database_v1.2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../template/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../.." />
+  </component>
+  <component name="ProjectId" id="2DXityVeGzAcA0FgVqD3Ask9FpU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f8b985e-f031-447d-8dbf-6f6bdbed36d2" name="Default Changelist" comment="" />
+      <created>1660852048514</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660852048514</updated>
+      <workItem from="1660852050178" duration="3000" />
+    </task>
+    <servers />
+  </component>
+</project>
